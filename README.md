@@ -1,37 +1,49 @@
-## Welcome to GitHub Pages
+[![Documentation Status](https://readthedocs.org/projects/gradescope-autograders/badge/?version=latest)](https://gradescope-autograders.readthedocs.org/en/latest/?badge=latest)
 
-You can use the [editor on GitHub](https://github.com/errorbook/qider.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+# Overview
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Gradescope provides a language-agnostic platform for running your
+autograders on our infrastructure. By running in Docker containers, we
+give you full flexibility in setting up whatever language, compilers,
+libraries, or other dependencies you need for your programming
+assignments. You provide us with a setup script and an autograder
+script, along with whatever supporting code you need, and we manage
+accepting student submissions, running your autograder at scale, and
+distributing the results back to students and to you.
 
-### Markdown
+# How it works
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+As an instructor, you create a new assignment on Gradescope, and
+upload your autograder zip file following our
+[specifications](https://gradescope-autograders.readthedocs.io/en/latest/specs/). Your code produces output in the format we
+request. Students submit to Gradescope and have their work evaluated
+on demand. They can submit as many times as they want. At the end of
+the process, you can download their code and their results.
 
-```markdown
-Syntax highlighted code block
+Follow our **[instructions](https://gradescope-autograders.readthedocs.io/en/latest/getting_started/)** to get started with
+autograding.
 
-# Header 1
-## Header 2
-### Header 3
+# Examples
 
-- Bulleted
-- List
+If you want to jump right in, we have built the following examples for
+autograders in different languages. You can see how they are built,
+and use them as a starting point for your own autograders. If you have
+any further questions, feel free to contact us at
+[help@gradescope.com](mailto:help@gradescope.com)
 
-1. Numbered
-2. List
+- [Python](python/)
+- [Java (JUnit)](java/)
+  - [Java+Maven](java-mvn/)
 
-**Bold** and _Italic_ and `Code` text
+# Pricing
 
-[Link](url) and ![Image](src)
-```
+The autograder platform is available with paid school site licenses
+and for individual courses that pay for access to our "Gradescope
+Complete" tier (see our [pricing page](https://www.gradescope.com/pricing)
+for more information).
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/errorbook/qider.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+If you're an existing user or have any questions regarding pricing,
+please contact us at
+[help@gradescope.com](mailto:help@gradescope.com). If you want to
+experiment with the platform to see if it works for you, feel free to
+contact us for trial access.
