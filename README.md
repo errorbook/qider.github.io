@@ -1,2 +1,1 @@
-# qider.github.io
-lol
+docs/README.md

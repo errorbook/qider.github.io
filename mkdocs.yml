@@ -1,0 +1,27 @@
+site_name: Gradescope Autograder Documentation
+repo_url: https://github.com/errorbook/qider.github.io
+docs_dir: docs
+theme: readthedocs
+extra_css: [gradescope.css]
+pages:
+- 'Home': index.md
+- 'Getting Started': getting_started.md
+- 'Autograder Specifications': specs.md
+- 'Manual Grading': manual_grading.md
+- 'Technical Details': tech.md
+- 'Debugging via SSH': ssh.md
+- 'Troubleshooting': troubleshooting.md
+- 'Advanced Usage':
+  - 'Submission Metadata': submission_metadata.md
+  - 'Manual Docker Configuration': manual_docker.md
+  - 'Pulling Autograder from Git': git_pull.md
+- 'Leaderboards': leaderboards.md
+- 'Examples':
+    - 'Python': python.md
+    - 'Java': java.md
+    - 'Java+Maven': java-mvn.md
+    - 'C#': c_sharp.md
+    - 'General output-checking autograder': diff_general.md
+    - 'Native code via Python': diff.md
+    - 'MySQL': mysql.md
+- 'Community Resources': resources.md
